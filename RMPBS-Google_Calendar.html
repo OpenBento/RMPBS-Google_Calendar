@@ -90,8 +90,8 @@ var SelectedDates = {}
 						 var t1 = this_start_date.getTime();
 
 						 date_diff =  parseInt((t2-t1)/(24*3600*1000));
+						 var this_date = new Date(this_start_date);
 						 if(date_diff >= 1){
-							 var this_date = new Date(this_start_date);
 							 for(var j = 0 ; j <= date_diff; j++){
 							 	SelectedDates[this_date.getMonth()+1+'/'+this_date.getDate()+'/'+this_date.getFullYear()] = this_date.getMonth()+1+'/'+this_date.getDate()+'/'+this_date.getFullYear();
 							 	this_date.setDate(this_date.getDate() +1); 
