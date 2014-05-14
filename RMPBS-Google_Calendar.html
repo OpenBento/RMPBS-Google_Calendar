@@ -109,6 +109,9 @@ var SelectedDates = {}
 						 $j("#calendarDiv").append("<article id='event"+i+"'></article>");
 						 $j("#event"+i).append("<h2 class='title'>" + events[i].summary +"</h2>");
 						 $j("#event"+i).append("<h3 class='date'>" + this_date_str +"</h3>");
+						 if(events[i].location.length > 0){
+							 $j("#event"+i).append("<h3 class='date'>" + events[i].location +"</h3>");
+						 }
 						 if(typeof events[i].description != 'undefined'){
 							 $j("#event"+i).append("<p class='description'>" + events[i].description +"</p>");
 						 }
@@ -124,6 +127,9 @@ var SelectedDates = {}
 						 $j("#more-events").append("<article id='event"+i+"'></article>");
 						 $j("#event"+i).append("<h2 class='title'>" + events[i].summary +"</h2>");
 						 $j("#event"+i).append("<h3 class='date'>" + this_date_str +"</h3>");
+						 if(events[i].location.length > 0){
+							 $j("#event"+i).append("<h3 class='date'>" + events[i].location +"</h3>");
+						 }
 						 if(typeof events[i].description != 'undefined'){
 							 $j("#event"+i).append("<p class='description'>" + events[i].description +"</p>");
 						 }
@@ -133,6 +139,9 @@ var SelectedDates = {}
 						 $j("#more-events").append("<article id='event"+i+"'></article>");
 						 $j("#event"+i).append("<h2 class='title'>" + events[i].summary +"</h2>");
 						 $j("#event"+i).append("<h3 class='date'>" + this_date_str +"</h3>");
+						 if(events[i].location.length > 0){
+							 $j("#event"+i).append("<h3 class='date'>" + events[i].location +"</h3>");
+						 }
 						 if(typeof events[i].description != 'undefined'){
 							 $j("#event"+i).append("<p class='description'>" + events[i].description +"</p>");
 						 }
